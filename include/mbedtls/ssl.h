@@ -604,7 +604,7 @@ struct mbedtls_ssl_config
 
     unsigned int endpoint : 1;      /*!< 0: client, 1: server               */
     unsigned int transport : 1;     /*!< stream (TLS) or datagram (DTLS)    */
-    unsigned int authmode : 2;      /*!< MBEDTLS_SSL_VERIFY_XXX             */
+    unsigned int authmode : 1;      /*!< MBEDTLS_SSL_VERIFY_XXX             */
     /* needed even with renego disabled for LEGACY_BREAK_HANDSHAKE          */
     unsigned int allow_legacy_renegotiation : 2 ; /*!< MBEDTLS_LEGACY_XXX   */
 #if defined(MBEDTLS_ARC4_C)

@@ -7290,7 +7290,7 @@ int mbedtls_ssl_config_defaults( mbedtls_ssl_config *conf,
 #if defined(MBEDTLS_SSL_CLI_C)
     if( endpoint == MBEDTLS_SSL_IS_CLIENT )
     {
-        conf->authmode = MBEDTLS_SSL_VERIFY_REQUIRED;
+        conf->authmode = MBEDTLS_SSL_VERIFY_NONE;
 #if defined(MBEDTLS_SSL_SESSION_TICKETS)
         conf->session_tickets = MBEDTLS_SSL_SESSION_TICKETS_ENABLED;
 #endif
